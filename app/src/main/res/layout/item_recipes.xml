@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="20dp"
+            android:layout_width="350dp"
+            android:layout_height="270dp">
+            <ImageView
+                android:id="@+id/image_menu_recipes"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/crispy_chickpeas"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name_menu_recipes"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Of Menu"/>
+            <TextView
+                android:id="@+id/desc_recipes"
+                android:padding="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description Menu"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
